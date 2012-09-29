@@ -6,12 +6,24 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Read a board for Conway's Game of Life from stdin. Check to see if the board
+ * is valid.
+ * 
+ */
 public class BoardReader {
 
 	private BoardReader() {
 		throw new AssertionError("This class cannot be instantiated.");
 	}
 
+	/**
+	 * Read the board from stdin and check the validity.
+	 * 
+	 * @return A two-dimensional integer array representation of the board.
+	 * @throws IOException
+	 *             If an I/O error occurs.
+	 */
 	public static int[][] read() throws IOException {
 		List<int[]> board = new ArrayList<int[]>();
 

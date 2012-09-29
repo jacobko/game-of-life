@@ -1,6 +1,13 @@
 package com.jko;
 
+/**
+ * Thrown to indicate that the board is not a valid board for Conway's Game of
+ * Life.
+ * 
+ */
 public class BadBoardException extends RuntimeException {
+
+	private static final long serialVersionUID = -859607005819609912L;
 
 	public BadBoardException() {
 		super();
