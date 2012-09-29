@@ -5,8 +5,11 @@
 *.war
 *.ear
 
-# Eclipse Files #
+# Eclipse Files and Directories#
 .classpath
 .project
 .settings
+
+# Maven Files and Directories#
 target
+test-output
